@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "e66569c8-e9a1-4086-8bb7-211c67c12500",
+		"name": "e-comm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44500677",
+		"_collection_link": "https://pradyumna-4559943.postman.co/workspace/pradyumna's-Workspace~ecf6af88-6ebe-4e22-84a6-2b93868b46e4/collection/44500677-e66569c8-e9a1-4086-8bb7-211c67c12500?action=share&source=collection_link&creator=44500677"
+	},
+	"item": [
+		{
+			"name": "get_product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://e-commerce-3o9s.onrender.com/api/product",
+					"protocol": "https",
+					"host": [
+						"e-commerce-3o9s",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://e-commerce-3o9s.onrender.com/api/user",
+					"protocol": "https",
+					"host": [
+						"e-commerce-3o9s",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_catogory",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://e-commerce-3o9s.onrender.com/api/catogory",
+					"protocol": "https",
+					"host": [
+						"e-commerce-3o9s",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"catogory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"prasad\",\"email\":\"prasad123@gmail.com\",\"password\":\"prasad1234\",\"role\":\"admin\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://e-commerce-3o9s.onrender.com/api/user",
+					"protocol": "https",
+					"host": [
+						"e-commerce-3o9s",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"prasad\",\"email\":\"prasad123@gmail.com\",\"password\":\"prasad1234\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://e-commerce-3o9s.onrender.com/api/user/login",
+					"protocol": "https",
+					"host": [
+						"e-commerce-3o9s",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_catogory",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"mobile\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://e-commerce-3o9s.onrender.com/api/catogory",
+					"protocol": "https",
+					"host": [
+						"e-commerce-3o9s",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"catogory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post_product",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODBmNzFiOGY1OTljODQ5MzQwZjRjNWMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDU4NDI2NDZ9.gx7nGzBxXSd1Wqs-DYi9QeHyj0IarmyfeNdR3Wj2kOw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\":\"samsungm30\",\"price\":15000,\"description\":\"sell phone\",\"catogory\":\"680f7181f599c849340f4c59\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://e-commerce-3o9s.onrender.com/api/product",
+					"protocol": "https",
+					"host": [
+						"e-commerce-3o9s",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
