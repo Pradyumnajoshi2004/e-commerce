@@ -6,10 +6,10 @@ const route = require("express").Router()
 
 route.get("/",getProduct)
 
-route.post("/",[auth,admin],postProduct)
+route.post("/",postProduct)
 
-route.put("/:id",[auth,admin],updateProduct)
+route.put("/:id",updateProduct)
 
-route.delete("/:id",[auth,admin],deleteProduct)
+route.delete("/:id",deleteProduct)
 
 module.exports = route
