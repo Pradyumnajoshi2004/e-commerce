@@ -13,6 +13,9 @@ const productSchema = new mongoose.Schema({
     description:{
         type:String
     },
+    image:{
+        type:String
+    },
     catogory:{
         type:mongoose.Schema.Types.ObjectId,
         ref : "catogory"
