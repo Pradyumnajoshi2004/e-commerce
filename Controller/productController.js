@@ -37,3 +37,13 @@ exports.deleteProduct = async (req,res) => {
         return res.status(500).json({errros:true,message:error.message})
     }
 }
+
+
+exports.productFindById = async (req,res) => {
+    try {
+        const  data = await Product.findById(req.params.id)
+        return res.json({errros:false,data:data})
+    } catch (error) {
+        return res.status(500).json({errors:true,message:error.message})
+    }
+}
